@@ -110,7 +110,7 @@ class MainWindow(QWidget):
 
     def save_data(self, button):
         if not self.recording:
-            with open('Labeled_Data/CJ77TAL 2024-05-10 16-44.CSV', 'w') as file:
+            with open('Labeled_Data/CJ77TAL 2024-05-10 23-01.CSV', 'w') as file:
                 file.write('Timestamp,Label\n')
                 for key, value in self.recorded_data.items():
                     file.write(f'{key},{value}\n')
